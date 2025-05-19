@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className={`min-h-screen ${theme === "dark" ? "dark" : ""}`}>
+      <Analytics />
       <div className="relative flex flex-col min-h-screen bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-950 transition-colors duration-300">
         <BackgroundGradient />
         <Navbar />
