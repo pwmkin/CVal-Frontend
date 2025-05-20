@@ -201,7 +201,9 @@ const HomePage: React.FC = () => {
       // Navigate to results page
       navigate(`/results/${evaluationWithMeta.id}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : t("errors.processing"));
+      const message = err instanceof Error ? err.message : "errors.processing";
+      const translated = message.startsWith("errors.") ? t(message) : message;
+      setError(translated);
       setIsProcessing(false);
       // Reset Turnstile on error
       resetTurnstile();
