@@ -10,6 +10,17 @@ export default {
     dark: "Dark",
     verifying: "Verifying your identity",
   },
+  errors: {
+    title: "An error occurred:",
+    missing_required_fields: "Please fill in all required fields",
+    resume_too_long: "Your resume is too long",
+    job_title_too_long: "The job title is too long",
+    user_language_too_long: "The language indicated is not valid",
+    invalid_captcha:
+      "The captcha is not valid, try again. If the problem persists, try using another browser",
+    internal_eval_error:
+      "An internal error occurred while evaluating your CV. Don't worry, it's not your fault, something is wrong with us. Please try again.",
+  },
   home: {
     welcome: "Welcome to CVal",
     subtitle: "Upload your resume and get instant AI feedback",

@@ -80,7 +80,7 @@ export const evaluateCV = async (
 
     if (!response.ok) {
       const errorData = await response.json();
-      throw new Error(errorData.message || "Failed to evaluate CV");
+      throw new Error(errorData.error || "Failed to evaluate CV");
     }
 
     return await response.json();

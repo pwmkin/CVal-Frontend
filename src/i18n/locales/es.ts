@@ -10,6 +10,17 @@ export default {
     dark: "Oscuro",
     verifying: "Verificando tu identidad",
   },
+  errors: {
+    title: "Ha ocurrido un error:",
+    missing_required_fields: "Por favor, completa todos los campos requeridos",
+    resume_too_long: "Tu CV es demasiado largo",
+    job_title_too_long: "El título de la oferta de empleo es demasiado largo",
+    user_language_too_long: "El lenguaje indicado no es valido",
+    invalid_captcha:
+      "El captcha no es valido, prueba de nuevo. Si el problema persiste intente usar otro navegador",
+    internal_eval_error:
+      "Error interno al evaluar el CV. No te preocupes, no es tu culpa, algo está mal con nosotros. Por favor, intenta de nuevo.",
+  },
   home: {
     welcome: "Bienvenido a CVal",
     subtitle: "Sube tu currículum y obtén comentarios con IA al instante",

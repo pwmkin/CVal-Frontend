@@ -302,13 +302,6 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {error && (
-        <div className="mt-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-md text-red-600 dark:text-red-400 text-sm">
-          <p className="font-medium">{t("errors.processing")}</p>
-          <p>{error}</p>
-        </div>
-      )}
     </div>
   );
 
@@ -379,6 +372,13 @@ const HomePage: React.FC = () => {
                 disabled={isProcessing}
               />
             </div>
+
+            {error && (
+              <div className="mt-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-md text-red-600 dark:text-red-400 text-sm">
+                <p className="font-medium">{t("errors.title")}</p>
+                <p>{error}</p>
+              </div>
+            )}
 
             {/* Cloudflare Turnstile Widget Container */}
             {showTurnstileWidget && (
